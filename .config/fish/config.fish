@@ -13,6 +13,14 @@ set -gx GOPATH $HOME/go
 set -gx GOBIN $GOPATH/bin
 set -gx PATH $PATH $GOBIN
 
+# NVM - NodeJS
+set -gx NVM_DIR ~/.nvm
+
+function load_nvm
+    bass source ~/.nvm/nvm.sh --no-use
+end
+load_nvm
+
 # Yarn
 set -gx PATH $HOME/.yarn/bin $HOME/.config/yarn/global/node_modules/.bin $PATH
 

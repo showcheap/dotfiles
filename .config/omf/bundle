@@ -1,3 +1,4 @@
+package bass
 package vcs
 theme default
 theme eclm
