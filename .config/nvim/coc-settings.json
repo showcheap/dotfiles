@@ -6,5 +6,7 @@
     },
     "eslint.autoFixOnSave": true,
     "eslint.run":"onType",
-    "eslint.filetypes": ["vue","js"]
+    "eslint.filetypes": ["vue","javascript","typescript"],
+    "tslint.run":"onType",
+    "tslint.autoFixOnSave": true
 }
