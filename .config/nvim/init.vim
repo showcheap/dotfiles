@@ -2,39 +2,25 @@ call plug#begin('~/.vim/plugged')
 
 " Theme & Colors
 Plug 'tomasiser/vim-code-dark'
-Plug 'arcticicestudio/nord-vim'
 Plug 'mhartington/oceanic-next'
-Plug 'joshdick/onedark.vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'junegunn/seoul256.vim'
+"Plug 'sheerun/vim-polyglot'
+Plug 'ryanoasis/vim-devicons'
 
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" emmet-vim 
-Plug 'mattn/emmet-vim'
+" Editorconfig
+Plug 'editorconfig/editorconfig-vim'
 
 " COC
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
-
-" Vim GO
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
-" Vim Rust
-Plug 'rust-lang/rust.vim'
-
-" Fugitive
-Plug 'tpope/vim-fugitive'
 
 " Ctrl + P
 Plug 'ctrlpvim/ctrlp.vim'
 
 " NERDTree
 Plug 'scrooloose/nerdtree'
-
-" ALE Linter
-Plug 'w0rp/ale'
 
 " Git Gutter
 Plug 'airblade/vim-gitgutter'
@@ -43,16 +29,17 @@ Plug 'airblade/vim-gitgutter'
 " Plug 'wakatime/vim-wakatime'
 
 " Vue
-Plug 'posva/vim-vue'
+"Plug 'posva/vim-vue'
 
 " Auto Pairs
 Plug 'jiangmiao/auto-pairs'
 
-" Rest Client
-Plug 'diepm/vim-rest-console'
-
 " Tmux Navigator
 Plug 'christoomey/vim-tmux-navigator'
+
+" Fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -61,13 +48,16 @@ call plug#end()
 set number
 set nowrap
 set expandtab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set autoindent
 "set cursorline
 syntax enable
 
+" NERDTree config
+let NERDTreeMinimalUI=1
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Emmet Vim
 let g:user_emmet_leader_key=','
@@ -127,7 +117,7 @@ nnoremap <silent> vv <C-w>v
 nnoremap <silent> <C-h> <C-w>n
 
 " Default Colorscheme
-colorscheme codedark 
+colorscheme OceanicNext
 
 " Airline Config
 "let g:airline_theme = 'codedark'
@@ -140,3 +130,4 @@ highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 set updatetime=100
+

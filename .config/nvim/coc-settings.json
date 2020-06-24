@@ -1,10 +1,10 @@
 {
-    "languageserver": {
-        "golang": {
-          "command": "bingo",
-          "args": ["--diagnostics-style=instant"],
-          "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-          "filetypes": ["go"]
-        }
-    }
+    "emmet.showExpandedAbbreviation": true,
+    "emmet.showAbbreviationsuggestions": true,
+    "emmet.includeLanguages": {
+        "vue-html": "html"
+    },
+    "eslint.autoFixOnSave": true,
+    "eslint.run":"onType",
+    "eslint.filetypes": ["vue","js"]
 }
