@@ -7,6 +7,4 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # Install Plugin
 echo "Install Vim Plugin"
-vim -c 'PlugInstall|q|q'
-
-
+nvim -c 'PlugInstall|q|q'
