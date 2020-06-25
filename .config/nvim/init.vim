@@ -41,6 +41,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" Comment
+Plug 'tpope/vim-commentary'
+
 call plug#end()
 
 " Basic Config
@@ -86,6 +89,9 @@ map <C-n> :NERDTreeToggle<CR>
 " Split
 nnoremap <silent> vv <C-w>v
 nnoremap <silent> <C-h> <C-w>n
+
+" Ctrl + / Commentary
+map <C-_> :Commentary<cr>
 
 " Default Colorscheme
 colorscheme codedark
