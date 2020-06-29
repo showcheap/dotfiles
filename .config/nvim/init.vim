@@ -100,6 +100,7 @@ colorscheme codedark
 let g:airline_theme = 'codedark'
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " Git Gutter Config
 highlight GitGutterAdd    guifg=#009900 ctermfg=2 
