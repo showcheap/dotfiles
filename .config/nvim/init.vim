@@ -3,7 +3,7 @@ call plug#begin('~/.vim/plugged')
 " Theme & Colors
 Plug 'tomasiser/vim-code-dark'
 Plug 'mhartington/oceanic-next'
-"Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 Plug 'ryanoasis/vim-devicons'
 
 " Airline
@@ -29,7 +29,7 @@ Plug 'airblade/vim-gitgutter'
 " Plug 'wakatime/vim-wakatime'
 
 " Vue
-"Plug 'posva/vim-vue'
+Plug 'posva/vim-vue'
 
 " Auto Pairs
 Plug 'jiangmiao/auto-pairs'
@@ -105,6 +105,9 @@ let g:airline#extensions#tabline#enabled = 1
 highlight GitGutterAdd    guifg=#009900 ctermfg=2 
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
+" Vue file fast open
+let g:vue_pre_processors='detect_on_enter'
 
 set updatetime=100
 
