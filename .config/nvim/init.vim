@@ -2,7 +2,8 @@ call plug#begin('~/.vim/plugged')
 
 " Theme & Colors
 Plug 'tomasiser/vim-code-dark'
-Plug 'mhartington/oceanic-next'
+Plug 'morhetz/gruvbox'
+
 Plug 'sheerun/vim-polyglot'
 Plug 'ryanoasis/vim-devicons'
 
@@ -41,8 +42,11 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" Comment
-Plug 'tpope/vim-commentary'
+" Git
+Plug 'tpope/vim-fugitive'
+
+" Comment (Ctrl / + Ctrl /)
+Plug 'tomtom/tcomment_vim'
 
 call plug#end()
 
@@ -91,13 +95,13 @@ nnoremap <silent> vv <C-w>v
 nnoremap <silent> <C-h> <C-w>n
 
 " Ctrl + / Commentary
-map <C-_> :Commentary<cr>
+" map <C-_> :Commentary<cr>
 
 " Default Colorscheme
-colorscheme codedark
+colorscheme gruvbox 
 
 " Airline Config
-let g:airline_theme = 'codedark'
+let g:airline_theme = 'gruvbox'
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
