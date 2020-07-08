@@ -1,6 +1,4 @@
 {
-    "emmet.showExpandedAbbreviation": true,
-    "emmet.showAbbreviationsuggestions": true,
     "emmet.includeLanguages": {
         "vue-html": "html"
     },
@@ -8,5 +6,6 @@
     "eslint.run":"onType",
     "eslint.filetypes": ["vue","javascript","typescript"],
     "tslint.run":"onType",
-    "tslint.autoFixOnSave": true
+    "tslint.autoFixOnSave": true,
+    "tailwindCSS.headwind.runOnSave": false
 }
