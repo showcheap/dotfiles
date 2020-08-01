@@ -1,4 +1,11 @@
 {
+    "coc.preferences.rootPatterns": [
+      ".git",
+      ".hg",
+      ".projections.json",
+      "package.json",
+      "composer.json"
+    ],
     "emmet.includeLanguages": {
         "vue-html": "html"
     },
@@ -7,5 +14,6 @@
     "eslint.filetypes": ["vue","javascript","typescript"],
     "tslint.run":"onType",
     "tslint.autoFixOnSave": true,
-    "tailwindCSS.headwind.runOnSave": false
+    "tailwindCSS.headwind.runOnSave": false,
+    "coc.preferences.formatOnSaveFiletypes": ["go","php"]
 }
